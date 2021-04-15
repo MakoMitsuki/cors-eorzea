@@ -1,9 +1,11 @@
 'use strict';
 
+require('dotenv').config();
+
 const express = require("express");
 const app = express();
 const yelp = require('yelp-fusion');
-const client = yelp.client('');
+const client = yelp.client(process.env.YELP_API_KEY);
 
 app.get("/fetchRestaurants/:location", (req, res) => {
     const searchRequest = {
@@ -29,6 +31,6 @@ app.get("/fetchRestaurantDetails/:alias", (req, res) => {
       });
 });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT, () => {
     console.log("Server running on port 3001");
 });
