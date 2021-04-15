@@ -1,0 +1,14 @@
+{
+    "name": "cors-eorzea",
+    "version": "1.0.0",
+    "description": "cors-anywhere but personal",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "MakoMitsuki",
+    "dependencies": {
+        "express": "^4.17.1",
+        "yelp-fusion": "^3.0.0"
+    }
+}
