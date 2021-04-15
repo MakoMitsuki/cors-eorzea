@@ -3,7 +3,7 @@
 const express = require("express");
 const app = express();
 const yelp = require('yelp-fusion');
-const client = yelp.client('bFqmyZA_tjEBnQsGX9002XateY3Z30-mKf8Ob7kZZz0VJJpVLIeI7alp4HpukdTC2GcPTvU2xOv5xieho06F59ABWsTTwrgNqc0etG7xRRcZkVNIyvBlAuKu0QZ2YHYx');
+const client = yelp.client('');
 
 app.get("/fetchRestaurants/:location", (req, res) => {
     const searchRequest = {
